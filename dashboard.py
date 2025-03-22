@@ -287,8 +287,9 @@ df_display.loc[df_display["Year"] == "2007-2008", ["Return", "Equities", "Fixed_
 # -------------------------------------------------
 navbar = dbc.NavbarSimple(
     brand=html.Span([
-        html.Span("Berkeley", className="animate__animated animate__pulse animate__infinite", style={"color": ACCENT_COLOR}),
-        " Haas Sustainable Investment Fund Annual Reports Dashboard"
+        html.Span("Berkeley", style={"color": ACCENT_COLOR, "margin": "0", "padding": "0"}),
+        html.Span("Haas", style={"color": "white", "margin": "0", "padding": "0"}),
+        " Sustainable Investment Fund Annual Reports Dashboard"
     ]),
     brand_href="#",
     color=PRIMARY_COLOR,
