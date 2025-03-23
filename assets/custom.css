@@ -1,0 +1,35 @@
+/* Custom CSS for dynamic animations and hover effects */
+
+/* Animate cards on hover */
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Graph hover effect */
+.dcc-graph:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+}
+
+/* Continuous subtle motion for non-interactive elements */
+@keyframes slowPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.01); }
+    100% { transform: scale(1); }
+}
+.animate__slow-pulse {
+    animation: slowPulse 5s infinite;
+}
+
+/* Navbar gradient animation */
+.navbar {
+    background: linear-gradient(270deg, #003262, #FDB515, #003262);
+    background-size: 600% 600%;
+    animation: gradientAnimation 10s ease infinite;
+}
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

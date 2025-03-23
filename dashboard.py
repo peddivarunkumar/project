@@ -301,7 +301,12 @@ navbar = dbc.NavbarSimple(
 # -------------------------------------------------
 # Initialize the Dash App with External Stylesheets
 # -------------------------------------------------
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets, suppress_callback_exceptions=True)
+# app = dash.Dash(__name__, external_stylesheets=external_stylesheets, suppress_callback_exceptions=True)
+app = dash.Dash(__name__,
+                external_stylesheets=external_stylesheets,
+                suppress_callback_exceptions=True,
+                meta_tags=[{"name": "viewport", "content": "width=device-width, initial-scale=1"}])
+
 app.title = "Haas SIF Annual Reports Dashboard"
 
 # -------------------------------------------------
